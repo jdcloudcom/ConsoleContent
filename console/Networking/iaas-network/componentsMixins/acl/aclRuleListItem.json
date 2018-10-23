@@ -1,0 +1,19 @@
+{
+    "ch": {
+        "aclRuleListItem_i18nKey_1": "自定义TCP",
+        "aclRuleListItem_i18nKey_2": "自定义UDP",
+        "aclRuleListItem_i18nKey_3": "提示信息",
+        "aclRuleListItem_i18nKey_4": "'拒绝' ",
+        "aclRuleListItem_i18nKey_5": "'接受'",
+        "aclRuleListItem_i18nKey_6": "接受",
+        "aclRuleListItem_i18nKey_7": "拒绝",
+        "aclRuleListItem_i18nKey_8": "删除",
+        "aclRuleListItem_i18nKey_9": "请输入1-32768的整数",
+        "aclRuleListItem_i18nKey_10": "请输入优先级",
+        "aclRuleListItem_i18nKey_11": "'请输入端口'",
+        "aclRuleListItem_i18nKey_12": "'请输入正确格式的端口，如1-65535'",
+        "aclRuleListItem_i18nKey_13": "'请输入IP地址'",
+        "aclRuleListItem_i18nKey_14": "'请输入正确格式的IP地址，如0.0.0.0",
+        "aclRuleListItem_i18nKey_15": "备注长度不能超过256字符"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "ch": {
+        "aclRuleList_i18nKey_1": "优先级",
+        "aclRuleList_i18nKey_2": "类型",
+        "aclRuleList_i18nKey_3": "协议",
+        "aclRuleList_i18nKey_4": "目标端口",
+        "aclRuleList_i18nKey_5": "'源IP' ",
+        "aclRuleList_i18nKey_6": "'目的IP'",
+        "aclRuleList_i18nKey_7": "策略",
+        "aclRuleList_i18nKey_8": "备注",
+        "aclRuleList_i18nKey_9": "操作",
+        "aclRuleList_i18nKey_10": "无acl",
+        "aclRuleList_i18nKey_11": "'入' ",
+        "aclRuleList_i18nKey_12": "'出'",
+        "aclRuleList_i18nKey_13": "站规则",
+        "aclRuleList_i18nKey_14": "'ACL规则数量已达上限'",
+        "aclRuleList_i18nKey_15": "添加新规则",
+        "aclRuleList_i18nKey_17": "'优先级重复性判断'",
+        "aclRuleList_i18nKey_18": "'优先级重复'",
+        "aclRuleList_i18nKey_19": "'优先级重复性判断",
+        "aclRuleList_i18nKey_20": "s重复'",
+        "aclRuleList_i18nKey_21": "'删除Acl规则",
+        "aclRuleList_i18nKey_22": "'原列表长度",
+        "aclRuleList_i18nKey_23": "'现列表长度",
+        "aclRuleList_i18nKey_24": "'待删除列表长度"
+    }
+}

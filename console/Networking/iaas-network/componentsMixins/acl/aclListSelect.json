@@ -1,0 +1,8 @@
+{
+    "ch": {
+        "aclListSelect_i18nKey_1": "选择需要关联的ACL，每个子网只能关联一个网络ACL",
+        "aclListSelect_i18nKey_2": "创建时间",
+        "aclListSelect_i18nKey_3": "无ACL数据",
+        "aclListSelect_i18nKey_4": "'获取acl列表数据成功"
+    }
+}
