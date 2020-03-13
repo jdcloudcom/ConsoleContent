@@ -1,0 +1,547 @@
+{
+
+  common: {
+
+    copy: 'Replicate',
+
+    delete: 'Delete',
+
+    restart: 'Restart',
+
+    oper: 'Operations',
+
+    notes: 'Note',
+
+    alter: 'Change',
+
+    cancel: 'Cancel',
+
+    tips: {
+
+      success: 'Operate successfully!',
+
+      delSuccess: 'Deletion succeeded',
+
+      delFailed: 'Deletion failed',
+
+      fail: 'Request failed. Please try again later',
+
+      copy: 'Replicate',
+
+      copySuccess: 'Copied'
+
+    },
+
+    emptyText: 'No data',
+
+    loadMore: 'Load more',
+
+    allLoaded: 'All loaded',
+
+    seeDetails: 'For details, please refer to',
+
+    CNY: 'RMB'
+
+  },
+
+  dialog: {
+
+    confirm: 'OK',
+
+    cancel: 'Cancel',
+
+    tip: 'Notification'
+
+  },
+
+
+
+  someHour: '{hour} hour(s)',
+
+  someDay: '{day} day(s)',
+
+  choiceDateRange: 'Select time range for search',
+
+  monitor: {
+
+    alarmLink: 'Set alarm rules'
+
+  },
+
+  helpLink: 'JNS Help Documentation',
+
+  subject: {
+
+    title: 'Subject Management',
+
+    searchPlaceHolder: 'Please enter the subject name for search',
+
+    create: 'Create',
+
+    accessPoint: 'Obtain access point',
+
+    accessAddress: {
+
+      title: 'Access Point Address',
+
+      public: 'Access Point Address'
+
+    },
+
+    columns: {
+
+      name: 'Subject Name',
+
+      showName: 'Display Name',
+
+      jrn: 'JRN',
+
+      monitor: 'Monitoring',
+
+      time: 'Creation Time/Modification Time',
+
+      oper: 'Operations'
+
+    },
+
+    columnConfig: {
+
+      title: 'Edit Columns',
+
+      tips: 'Please select the information to be displayed in the list and {count}/{total} has been selected',
+
+      all: 'Select all'
+
+    },
+
+    action: {
+
+      subscribe: 'Subscribe',
+
+      sendMessage: 'Send message',
+
+      more: 'More',
+
+      modifyName: 'Modify display name',
+
+      confirm: 'Subscription Confirmation',
+
+      config: 'Configuration Changes',
+
+      authority: 'Subject Permission',
+
+      encrypt: 'Encryption Configuration',
+
+      delete: 'Delete subject',
+
+      editTag: 'Edit tag'
+
+    },
+
+    removeTopic: {
+
+      title: 'Delete subject',
+
+      tips: 'Confirm to delete {name}?',
+
+      tips1: 'After {name} is deleted, information in the subject cannot be recovered and the subject service will be stopped.'
+
+    },
+
+    createTopic: {
+
+      title: 'Create subject',
+
+      chargeMode: 'Pay by Consumption',
+
+      basicInfo: 'Basic Information',
+
+      region: 'Region',
+
+      topicName: 'Subject Name',
+
+      showName: 'Display Name',
+
+      placeholder: {
+
+        name: 'Please enter subject name, which cannot be modified upon creation',
+
+        showName: 'Please enter subject name for presentation.'
+
+      },
+
+      tips: {
+
+        nameRequired: 'Must provide a subject name',
+
+        name: 'It can only contain letters, numbers, hyphens (-), underlines (_) or addition operator (+)',
+
+        name1: 'Contain 256 characters in length',
+
+        showName:
+
+          'When the email message is pushed, the display name has been set, and the sender is "Display Name<example@example.com>". Otherwise, the sender is "<example@example.com>""',
+
+        showName1: 'Contain 256 characters in length'
+
+      },
+
+      choosed: {
+
+        title: 'Selected Configuration',
+
+        count: 'Purchase Quantity',
+
+        price: {
+
+          create: 'Creation Cost',
+
+          api: 'API Calling Times',
+
+          api1: 'RMB {amount}/1 million times',
+
+          notify: 'Notice Pushing Cost',
+
+          notify1: 'For details, please refer to'
+
+        }
+
+      },
+
+
+
+      failTips: 'Creation failed!'
+
+    },
+
+    detail: {
+
+      title: 'Subject Details',
+
+      tabs: {
+
+        info: 'Subject Information',
+
+        monitor: 'Monitoring',
+
+        subscribe: 'Subscribe'
+
+      },
+
+      info: {
+
+        region: 'Region',
+
+        name: 'Subject Name',
+
+        showName: 'Display Name',
+
+        jrn: 'Subject JRN',
+
+        subscribeCount: 'Number of Subscriptions',
+
+        createTime: 'Creation Time',
+
+        modifyTime: 'Modification Time'
+
+      }
+
+    }
+
+  },
+
+  strategy: {
+
+    title: 'Subject Transmission Retry Policy (HTTP/S)',
+
+    retryCount: 'Retry Count',
+
+    instantRetry: 'Retry Now',
+
+    minTime: 'Minimum Delay Time',
+
+    maxTime: 'Maximum Delay Time',
+
+    minRetry: 'Minimum Delay Retry',
+
+    maxRetry: 'Maximum Delay Retry',
+
+    maxRate: 'Maximum Reception Rate',
+
+    reteTips: '1 or more',
+
+    strategy: 'Retry Black-off Policy',
+
+    strategys: {
+
+      linear: 'Linear',
+
+      arithmetic: 'Arithmetic',
+
+      geometric: 'Geometric',
+
+      exponential: 'Index'
+
+    },
+
+    ignoreCover: 'Ignore subscription replacement',
+
+    ignoreText: {
+
+      1: 'Enable',
+
+      0: 'Disable'
+
+    },
+
+    unit: {
+
+      count: 'Times',
+
+      time: 'Second',
+
+      rate: 'Nr./second'
+
+    }
+
+  },
+
+  subscribe: {
+
+    title: 'Subscription Management',
+
+    searchPlaceHolder: 'Please enter the subscription name for search',
+
+    confirm: 'Subscription Confirmation',
+
+    action: {
+
+      config: 'Configuration Changes',
+
+      confirm: 'Request Confirmation'
+
+    },
+
+    detail: {
+
+      title: 'Subscription Details',
+
+      info: 'Subscription Information',
+
+      topic: 'Subject',
+
+      subscribeJrn: 'Subscribe JRN',
+
+      status: 'Status',
+
+      owner: 'Subscriber'
+
+    },
+
+    total: 'Total number of subscriptions: {total}',
+
+    columns: {
+
+      id: 'Subscription ID',
+
+      category: 'Subscription Type',
+
+      status: 'Status',
+
+      address: 'Receiver End Address',
+
+      subjectName: 'Subject Name',
+
+      owner: 'Subscriber',
+
+      createTime: 'Creation Time',
+
+      modifyTime: 'Modification Time'
+
+    },
+
+    create: {
+
+      title: 'Subscription Creation',
+
+      basicInfo: 'Basic Information',
+
+      protocol: 'Subscription Type',
+
+      config: 'Subscription Configuration',
+
+      endpoint: 'Terminal Address',
+
+      endpointPlaceholder: {
+
+        basic: '\n Subscription terminal addresses can be added in batches, which shall be separated with line breaks.',
+
+        http: 'http://www.example.com',
+
+        https: 'https://www.example.com',
+
+        email: 'example@example.com',
+
+        jqs: 'jrn:jqs:cn-north-1:userPin:testQueue (Standard Queue)',
+
+        function: 'Please select a trigger function',
+
+        function1: 'Please select a function version',
+
+        sms: '13xxxxxxxxx (Domestic), +[National Code]13xxxxxxxxx (International)'
+
+      },
+
+      rawMsgDelivery: 'Original Message Transmission',
+
+      msgTips: 'The original message transmission only contains the origin message itself rather than metadata in JSON format of Notification Service.',
+
+      deliveryPolicy: 'Subscription Transmission Retry Policy (HTTP/S)',
+
+      filterPolicy: {
+
+        title: 'Subscription Filtering Policy',
+
+        json: 'Filter JSON',
+
+        rule: 'Filtering Policy Rules',
+
+        tips: 'Please enter JSON object'
+
+      },
+
+      validTips: {
+
+        filter: 'Please enter for filtering',
+
+        json: 'Please enter correct policy JSON',
+
+        subject: 'Please select a subject',
+
+        endpoint: 'Please enter the terminal address'
+
+      }
+
+    },
+
+    delete: {
+
+      title: 'Delete subscription',
+
+      tips: 'Confirm to delete {name}?',
+
+      tips1: 'After {name} is deleted, information in the subject can neither be received by a subscriber nor be recovered.'
+
+    },
+
+    confirmSub: {
+
+      title: 'Subscription Confirmation',
+
+      url: 'Please enter and confirm subscribed URL',
+
+      success: 'Subscription confirmation succeeded!',
+
+      fail: 'Subscribe confirmation failed!',
+
+      jrn: 'Please enter topicJrn',
+
+      token: 'Please enter the token'
+
+    }
+
+  },
+
+  tag: {
+
+    chooseTag: 'Selected Tag(s)',
+
+    clearTag: 'Clear',
+
+    tableTag: 'Tag Key'
+
+  },
+
+  sendMessage: {
+
+    title: 'Send message',
+
+    topicName: 'Subject Name',
+
+    jrn: 'JRN',
+
+    messageTopic: 'Message Subject',
+
+    messageFormat: 'Message Format',
+
+    FORMATTYPE: {
+
+      string: 'Original Text',
+
+      json: 'JSON'
+
+    },
+
+    content: 'Message Content',
+
+    attribute: {
+
+      title: 'Message Attribute',
+
+      add: 'Add attribute',
+
+      name: 'Name',
+
+      type: 'Type',
+
+      value: 'Value',
+
+      palceholder: {
+
+        String: 'Please enter the character string',
+
+        'String.Array': 'Please enter the character string array',
+
+        Number: 'Please enter the number',
+
+        Binary: 'Please enter base64 code value'
+
+      },
+
+      validTips: {
+
+        name: 'A-Z, a-z, 0-9 (_), underline (_), hyphen (-) and dot (.) are supported',
+
+        nameLength: 'The maximum length is 256 characters',
+
+        nameOnly: 'It must be unique among all attributes of the message',
+
+        nameDot: 'It cannot start or end with a dot',
+
+        nameDot1: 'No consecutive dots are allowed',
+
+        value: 'The value cannot be null',
+
+        json: 'Please enter in Json format'
+
+      }
+
+    },
+
+    confirm: 'Release messages',
+
+    confirmed: {
+
+      sended: 'Your message has been sent to {topicName} ',
+
+      subject: 'Message Subject',
+
+      content: 'Message Content',
+
+      next: 'Send the next one'
+
+    }
+
+  }
+
+}
