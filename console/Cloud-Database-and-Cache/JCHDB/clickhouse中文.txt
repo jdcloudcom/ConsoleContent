@@ -1,0 +1,398 @@
+#说明
+文件内容为开发人员从代码中提取出来的中文，请翻译人员在每行中文后面直接翻译即可
+例如：
+
+  pageErrorTip: '页面访问错误，请稍后访问...',  //   Page access error, please visit later...
+
+
+export default {
+  dialog: { confirm: '确 定', cancel: '取 消', tip: '提示' },
+  redirectTip: `前往概览页 >`,
+  pageErrorTip: '页面访问错误，请稍后访问...',
+  const: {
+    index: {
+      helpDoc: '帮助文档',
+    },
+    list: {
+      create: '创建',
+      noCKSdata: '暂无CKS数据',
+      running: '运行',
+      creation: '创建中',
+      deleting: '删除中'
+    },
+    configGroup: {
+      clusterType: '规格'
+    },
+    create: {
+      numCopies: '副本数',
+      avZone: '可用区',
+      numSlices: '分片数',
+      createTime: '创建时间',
+      tableBilling: '计费信息',
+      xlarge: '4核 16GB',
+
+    },
+    menu: {
+      operation: '操作'
+    },
+    rules: {
+      instanceName:
+        '只支持数字、大小写字母、英文下划线“_”，英文减号"-"，以及中文，不少于2字符且不超过64字符',
+      length: '名称需不少于2字符且不超过64字符',
+      require: '名称不能为空'
+    },
+    status: {
+      RUNNING: '运行',
+      DELETING: '删除中',
+      BUILDING: '创建中',
+      CREATING: '创建中',
+      PRIVILEGEUPDATING: '修改权限中',
+      PASSWORDUPDATING: '重置密码中',
+      SUSPENDED: '欠费',
+      MODIFYING: '变配中',
+      // pop节点状态
+      Pending: '加载中',
+      Running: '运行',
+      Succeeded: '成功',
+      Failed: '失败',
+      Unknown: '未知',
+      Other: '其他'
+    }
+  },
+  common: {
+    year: '年',
+    month: '个月', // 1个月 2个月
+    azMap: {
+    },
+    soldOut: '罄',
+    regions: {
+      'cn-north-1': '华北-北京',
+      'cn-south-1': '华南-广州',
+      'cn-east-2': '华东-上海',
+      'cn-east-1': '华东-宿迁'
+    },
+    delete: '删除',
+    renew: '续费',
+    tips: {
+      delSuccess: '删除成功',
+      delFailed: '删除失败',
+      fail: '请求失败，请稍后再试',
+      copy: '复制',
+      copySuccess: '复制成功',
+      success: '开启成功',
+      closeSuccess: '关闭成功',
+      needRefresh: '删除成功，请手动刷新页面。'
+    },
+    confirm: '确定',
+    cancel: '取消',
+    sure: '确定',
+    more: '更多'
+  },
+  regexTips: {
+    nameIsRequired: '名称不可为空',
+    nameTips: '只支持数字、大小写字母、英文下划线“_”，英文减号"-"以及中文',
+    nameLength: '不少于2字符且不超过64字符'
+  },
+  tag: {
+    fail: '筛选标签失败',
+    editTag: '编辑标签',
+    tagTitle: '标签',
+    checked: '已选标签',
+    clear: '清 空'
+  },
+  operateTip: {
+    noCharge: '当前计费状态不允许',
+    noStatus: '当前实例状态不允许',
+    prepaidNotAllowed: '包年包月不允许删除'
+  },
+  resource: {
+    // 归类为Api的资源的，对资源进行翻译
+    // 比如对 https://git.jd.com/jcloud-api-gateway/jcloud-open-api-doc/blob/internal/vpc/Virtual-Private-Cloud/describeVpc.md
+    vpc: {
+      vpcName: 'VPC名称',
+      createdTime: '创建时间'
+    },
+    subnet: {
+      subnetName: '子网名称'
+    }
+  },
+  components: {
+    operation: '操作',
+    // 组件级别，比如：
+    regionRadio: {
+      differentRegionTip: '不同地域资源内网不互通，创建后不可更改。',
+      resourceQuotaTip: '当前地域总配额为{userQuota}核，剩余{availableQuota}核，可通过工单提升配额',
+      submitIssue: '提交工单',
+      quota: `所选配置需配额{needQuota}核，当前配额{userQuota}核，剩余{availableQuota}核，可用配额不足，请提交工单提升配额！`,
+      quotaTip: '所选规格超过配额,无法创建,请提交工单提升配额!'
+    },
+    list: {
+      id: 'ID',
+      instanceId: '请输入ID进行搜索',
+      name: '名称',
+      instanceName: '请输入名称进行搜索',
+      deleteId: '要删除的实例ID',
+      delInstanceId: '请输入要删除的ID',
+      IdNotSame: '实例ID不相同'
+    },
+    create: {
+      choose: '请选择',
+      keyWords: '系统保留关键字',
+      vpc: {
+        chooseSubnet: '请选择子网络',
+        noneSubnet: '当前没有子网络',
+        vpcSubnetIp:
+          '所选配置需要 {needAvailabelIpCount} 个IP，当前网络共 {availableIpCount} 个子网IP可用',
+        vpcHelp:
+          '您可以去控制台{newVpcLink}或者{newSubnetLink}如果您找不到新建的私有网络可以{refreshVpc}',
+        newSubnetLink: '新建子网。',
+        newVpcLink: '新建私有网络',
+        refreshVpc: '点击刷新',
+        vpcTip:
+          'SQL Server实例需要和访问数据库的云主机在同一个VPC中，并且云主机的安全组开通了1433端口，点击',
+        lookDoc: '查看文档',
+        noneSubnetTip: '当前无可用子网',
+        noneVpcTip: '当前无可用私有网络'
+      }
+    },
+    AZ: {
+      AzDeploy: '多可用区部署',
+      AzDeployTips: '将实例的多个副本分配在不同的可用区中。',
+      master: '可用区1',
+      slave: '可用区2',
+      selectAz: '选择可用区',
+      selectAzTips:
+        '可用区是指在同一地域下，电力、网络等基础设施互相独立的物理区域。一个地域包含一个或多个可用区，同一地域下的多个可用区可以彼此连通',
+      selectYes: '是',
+      selectNo: '否'
+    },
+    chargeStatus: {
+      maturity: '到期',
+      expired: '已过期',
+      freed: '释放',
+      arrear: '已欠费',
+      normal: '正常',
+      overdue: '已过期'
+    },
+    account: {
+      createAccount: '创建账号',
+      access: '权限',
+      ro: '只读',
+      rw: '读写',
+      databaseAccount: '数据库账号',
+      resetPSD: '重置密码',
+      modifyAccess: '修改权限',
+      setAccess: '权限设置',
+      list: {
+        nodata: '当前无账号数据',
+        tips: '内部管理用户，不可更改、操作',
+        innerAccount: '内部管理账户',
+        confirmDel: '确认删除账号 ',
+        delAccount: '删除账号',
+        failTip: '删除账号失败，请稍后重试！'
+      },
+      reset: {
+        psdModified: '密码修改成功！',
+        psdModifiedFail: '密码修改失败，请稍后再试！',
+        psd: '密码',
+        confirmPSD: '确认密码',
+        accountTip: '必须以大小写字母开头，支持数字、大小写字母及英文下划线“_”，不超过16字符',
+        sqlServerAccountTip:
+          '账号只支持数字、大小写字母及英文下划线“_”，必须以字母或者数字开头，且不超过16个字符',
+        psdTip:
+          '支持数字、大小写字母及部分特殊字符，长度8 - 32字符，密码必须包含大小写字母和数字特殊字符支持 “!”、“@”、“#”、“$”、“%”、“^”、“&”、“*”、“()”、“_”、“+”、“-”、“=”'
+      },
+      rules: {
+        noneTip: '账号不能为空',
+        lenTip: '账号长度不能超过16个字符',
+        accountTip: '必须以大小写字母开头，支持数字、大小写字母及英文下划线“_”，不超过16字符',
+        sqlServerAccountTip: '账号只支持数字、大小写字母及英文下划线“_”，必须以字母或者数字开头',
+        charsetTip: '账号中的“-”字符不能连续',
+        psdNone: '密码不能为空',
+        psdLen: '密码长度不能少于8个字符且不能大于{max}个字符',
+        psdSupports: "密码必须包含大小写字母及数字，不支持'/', '\"', '@'这三类字符。",
+        pgPsdTip: '密码必须包含且只支持大小写字母及数字，不少于8字符不超过16字符',
+        sqlServerPsd:
+          '密码必须包含大小写字母及数字，长度8 - 32字符，特殊字符支持-=;,./~!@#$%^&*()_+-|{}:<>? 即除`[ ]\'"和空格外的ASCII字符',
+        psdError: '两次输入的密码不一致',
+        noteLen: '最多输入255个字符',
+        noteTip: '字数超出限制！'
+      },
+      create: {
+        accessDatabase: '授权数据库',
+        canAccessDB: '可授权数据库',
+        created: '创建账号成功',
+        createFail: '创建账号失败，请稍候再试'
+      }
+    }
+  },
+  views: {
+    // 页面级别，比如：
+    list: {
+      header: '分析型云数据库 JCHDB',
+      nameAndId: 'ID/名称',
+      status: '状态',
+      copy: '副本',
+      memory: '内存空间',
+      storage: '存储空间'
+    },
+    create: {
+      create: '创建实例',
+      prepaid_by_duration: '包年包月',
+      prePay: '包年包月',
+      postpaid_by_duration: '按配置',
+      postPay: '按配置',
+      region: '地域',
+      flavor: '单节点规格',
+      version: '版本',
+      numCopies: '副本数',
+      replicationNum: {
+        1: '单副本',
+        2: '双副本',
+        3: '自定义副本数',
+        tips: '目前支持的最大副本数为{max}'
+      },
+      customCopy: '自定义副本数',
+      numSlices: '分片数',
+      numSliceTips: '支持1-{max}',
+      storageType: '存储类型',
+      core: '核',
+      EBS_SSD: '性能型SSD云盘',
+      storage: '单节点存储空间',
+      zkConfig: 'ZK配置',
+      zkNum: 'ZK数目',
+      zkFlavor: 'ZK规格',
+      recommend: '使用推荐配置',
+      custom: '自定义配置',
+      nodeNums: '节点数',
+      vpcNet: '私有网络',
+      deploy: '部署方式',
+      basicInfo: '基本信息',
+      instanceName: '实例名称',
+      selected: '已选配置',
+      net: '网络',
+      price: '配置费用',
+      computing: '计算中…',
+      buy: '立即购买',
+      hourly: '/小时',
+      monthPrice: '（合计约 ￥%{monthPrice}/月）',
+      clusterSubnetTip: '子网可用 IP 数不足，请更换子网',
+      zkNode: 'ZK节点',
+      computedNode: '计算节点',
+      discountedPrice: '优惠价',
+      amount: '总价',
+      totalPrice: '原价',
+      save: '省',
+      num: '购买量',
+      duration: '购买时长',
+      month: '个月',
+      year: '年'
+    }
+  },
+  detail: {
+    index: {
+      info: '实例信息',
+      account: '账号管理',
+      monitor: '监控',
+      nodeInfo: '节点信息'
+    },
+    menu: {
+      basicInformation: '基本信息',
+      name: '名称',
+      billingType: '计费类型',
+      createTime: '创建时间',
+      region: '地域',
+      AZone: '可用区',
+      config: '配置',
+      dbVersion: '数据库版本',
+      storage: '存储空间',
+      storageType: '存储类型',
+      deleteInstance: '删除',
+      engineVersion: '引擎类型',
+      expireTime: '到期时间',
+      memory: '内存'
+    },
+    table: {
+      computedFlavor: '计算节点规格',
+      master: '主',
+      slave: '备',
+      storage: '计算节点存储',
+      EBS_SSD: '性能型SSD云盘',
+      zkFlavor: 'ZK节点规格',
+      zkNodeNum: 'ZK节点数目',
+      net: '域名信息',
+      intranetDomain: '内网域名',
+      externalDomain: '公网域名',
+      noOpen: '未开启',
+      tcpPort: 'TCP端口',
+      httpPort: 'HTTP端口',
+      monitor: '监控',
+      port: '端口'
+    },
+    monitor: {
+      m: '{count}分钟',
+      h: '{count}小时',
+      d: '{count}天',
+      instance: '实例',
+      node: '节点'
+    },
+    baseInfo: {
+      modifyName: '修改名称',
+      instanceName: '名称',
+      tip:
+        '名称只支持数字、大小写字母、英文下划线“_”、英文减号"-"以及中文，不少于2字符且不超过64字符',
+      modifyNameSuccess: '修改名称成功'
+    },
+    adjustFlavor: {
+      title: '调整配置',
+      tip: '提示信息:',
+      tip1: '调整配置过程中，实例可正常使用。完成后会有短暂闪断，应用重连即可',
+      tip2: '包年包月的实例降低配置，实例到期时间将自动延长',
+      flavor: '当前规格',
+      chargeMode: '计费类型',
+      expireTime: '到期时间',
+      quota: '配额信息',
+      resourceQuotaTip:
+        '所选配置需新增配额{needQuota}核，当前配额{userQuota}核，剩余{availableQuota}核',
+      resourceQuotaTip1:
+        '所选配置需新增配额{needQuota}核，当前配额{userQuota}核，剩余{availableQuota}核，可用配额不足，请提交工单提升配额！',
+      noEnoughSubnetTip: '配额不足',
+      theSameConf: '规格无变化',
+      noPrice: '当前无价格'
+    },
+    nodeInfo: {
+      noCKSdata: '暂无节点数据',
+      id: '节点ID',
+      number: '节点序号',
+      status: '状态',
+      cpu: 'CPU使用率',
+      memery: '内存使用率',
+      disk: '空间使用率',
+      operation: '操作'
+    }
+  },
+  apiError: {
+    IAM: '您没有权限执行此操作，请联系管理员为您添加权限。',
+    // openApi通用错误
+    INVALID_ARGUMENT: '参数错误',
+    FAILED_PRECONDITION: '此操作需要的预置条件不满足',
+    OUT_OF_RANGE: '参数超出范围',
+    UNAUTHENTICATED: '验证失败',
+    HTTP_FORBIDDEN: '没有权限',
+    NOT_FOUND: '找不到对象',
+    ABORTED: '操作终止',
+    ALREADY_EXISTS: '对象已存在',
+    QUOTA_EXCEEDED: '配额不足',
+    RATE_LIMIT: '请求过频繁',
+    CANCELLED: '取消操作',
+    UNKNOWN: '未知错误',
+    INTERNAL: '内部错误',
+    NOT_IMPLEMENTED: '操作未实现',
+    SOURCE_UNAVAILABLE: '源站不可用',
+    UNAVAILABLE: '服务不可用',
+    DEFAULT: '系统错误'
+  },
+  copySus: '复制成功',
+  copy: '复制'
+}
+
