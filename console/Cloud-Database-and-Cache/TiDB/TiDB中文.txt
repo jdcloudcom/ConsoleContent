@@ -1,0 +1,401 @@
+/* 翻译文件
+ * 分类为：
+ *   1. common
+ *   2. resource
+ *   3. component
+ *   4. view
+ *   5. 其他
+ * */
+
+export default {
+  title: '京东智联云控制台',
+  common: {
+    year: '年',
+    month: '个月', // 1个月 2个月
+    azMap: {
+      'cn-north-1a': '可用区A',
+      'cn-north-1b': '可用区B',
+      'cn-north-1c': '可用区C',
+      'cn-east-1a': '可用区A',
+      'cn-east-2a': '可用区A',
+      'cn-east-2b': '可用区B',
+      'cn-south-1a': '可用区A',
+      'cn-south-1b': '可用区B',
+      'cn-hongkong-a': '可用区A',
+      'cn-west-1a': '可用区A'
+    },
+    soldOut: '罄',
+    regions: {
+      'cn-north-1': '华北-北京',
+      'cn-south-1': '华南-广州',
+      'cn-east-2': '华东-上海',
+      'cn-east-1': '华东-宿迁'
+    },
+    statusText: {
+      RUNNING: '运行',
+      BUILDING: '创建中',
+      DELETING: '删除中',
+      REBOOTING: '重启中',
+      MAINTENANCE: '维护中',
+      FAILOVER: '主备切换中',
+      MODIFYING: '配置调整中'
+    },
+    // 已选配置和详情页使用
+    nodeInfo: {
+      tidb: 'TiDB 节点',
+      pd: 'PD 节点',
+      tikv: 'TiKV 节点',
+      monitor: 'Monitor 节点'
+    },
+    confirm: '确认',
+    cancel: '取消',
+    tips: {
+      active: '仅实例为运行状态时可以操作',
+      middle: '中间态不允许删除',
+      cannotOp: '当前状态不允许操作',
+      annualFee: '包年包月暂不支持删除',
+      success: '任务提交成功',
+      failed: '任务提交失败'
+    }
+  },
+  resource: {
+    // 归类为Api的资源的，对资源进行翻译
+    // 比如对 https://git.jd.com/jcloud-api-gateway/jcloud-open-api-doc/blob/internal/vpc/Virtual-Private-Cloud/describeVpc.md
+    vpc: {
+      vpcName: 'VPC名称',
+      createdTime: '创建时间'
+    },
+    subnet: {
+      subnetName: '子网名称'
+    },
+    account: {
+      status: {
+        BUILDING: '创建中',
+        RUNNING: '运行',
+        RESETING: '密码重置中',
+        BUILDING_ERROR: '错误'
+      }
+    },
+    buckupPolicy: {
+      backupPeriod: {
+        MONDAY: '星期一',
+        TUESDAY: '星期二',
+        WEDNESDAY: '星期三',
+        THURSDAY: '星期四',
+        FRIDAY: '星期五',
+        SATURDAY: '星期六',
+        SUNDAY: '星期日'
+      }
+    }
+  },
+  component: {
+    // 组件级别，比如：
+    regionRadio: {
+      differentRegionTip: '不同地域资源内网不互通，创建后不可更改。',
+      resourceQuotaTip: '当前地域总配额为{userQuota}核，剩余{availableQuota}核，可通过工单提升配额'
+    },
+    chargeMode: {
+      postpaid_by_duration: '按配置',
+      prepaid_by_duration: '包年包月',
+      discount: '优惠'
+    },
+    chargeItem: { maturity: '到期', expired: '已过期', freed: '释放', arrear: '已欠费' },
+    tableActionBar: {
+      createButton: '创建',
+      searchHint: '请输入内容',
+      pleaseSelect: '请选择',
+      searchName: '名称',
+      searchId: '实例 ID',
+      chrage: '计费类型',
+      expireDate: '过期时间',
+      engineVersion: '版本',
+      region: '地域',
+      subnet: '子网'
+    },
+    templates: {
+      started: '入门配置',
+      standard: '标准配置',
+      enterprise: '企业配置',
+      startedTip: '用于数据量不大，无高可用要求的场景，如开发、测试等环境。',
+      standardTip: '可用于中等规模的生产环境，具有高可用架构。',
+      enterpriseTip: '可用于高并发，海量数据的大规模的生产环境，具有高可用架构。'
+    },
+    formItemTemplate: {
+      tidb: 'TiDB 节点 负责接收请求，处理SQL逻辑，与TiKV交互获取数据，并最终返回结果',
+      tikv: 'TiKV 节点是Key-Value分布式存储引擎，默认3数据副本',
+      pd: `PD节点是整个集群的管理模块，主要负责存储集群的元信息，对 TiKV 进行调度和负载均衡，分配事务 ID。`,
+      monitor: '负责监控数据的管理，一个集群只有一个Monitor节点'
+    },
+    vpcSelect: {
+      choiceVpc: '请选择私有网络',
+      choiceSubnet: '请选择子网络',
+      currentNoSubnet: '当前无子网络',
+      vpcSubnetIp: '所选配置需要{needIpCount}个IP，当前网络共{availableIpCount}个IP可用',
+      vpcHelp: `您可以去控制台{newVpcLink}或者{newSubnetLink}如果您找不到新建的私有网络可以{refreshVpc}`,
+      newVpcLink: '新建私有网络',
+      newSubnetLink: '新建子网。',
+      refreshVpc: '点击刷新'
+    },
+    billPeriod: {
+      month: '个月',
+      year: '年'
+    },
+    selectedConfiguration: {
+      title: '已选配置',
+      region: '地域',
+      az: '可用区',
+      engineVersion: '版本',
+      instanceName: '实例名称',
+      network: '网络',
+      amount: '总价', // 包年包月显示总价
+      originPrice: '原价',
+      save: '省',
+      fee: '配置费用', // 按配置
+      price: `￥{0} /小时`,
+      totalPrice: `(合计约 ￥ {totalPrice} /月)`,
+      discountedPrice: '优惠价',
+      computing: '计算中...',
+      core: '{c}核 {m}GB, {n}节点',
+      storage: '{0}GB 存储'
+    },
+    deleteButton: {
+      buttonText: '删除',
+      deleting: '删除中',
+      pleaseInput: '请输入要删除的实例 ID：',
+      errorTip: '请输入正确的实例 ID',
+      success: '删除任务提交成功',
+      failed: '删除任务提交失败'
+    },
+    renewButton: {
+      renewText: '续费',
+      turnToYear: '转包年包月'
+    },
+    // 创建帐号按钮组件
+    account: {
+      createAccount: '创建帐号',
+      accountName: '帐号名',
+      password: '密码',
+      rePassword: '确认密码',
+      accountNameTip: '帐号只支持数字、大小写字母及英文下划线“_”，不超过16字符',
+      accountKeywordTip: '该帐号为系统保留账号,暂不支持创建',
+      passwordTip: `密码必须包含大小写字母及数字，不支持'\\'、 '/'、 '"'、 '@'、英文单引号和中文这六类字符，长度应不少于 8 字符且不超过 32 字符`,
+      psdNone: '请输入密码',
+      accountNone: '请输入帐号',
+      passwordLimit: '密码长度应不少于 8 字符且不超过 32 字符',
+      notSamePsd: '两次输入密码不一致',
+      createTip: '当前实例已创建高权限账号，可使用该账号通过SQL创建其他账号'
+    },
+    // 创建备份组件
+    backup: {
+      createBackup: '创建备份',
+      backupTip: `只支持数字、大小写字母、英文下划线“_”，英文减号"-"，以及中文，不少于2字符且不超过64字符`,
+      backupName: '备份名称',
+      createTip: '每个实例仅能创建3个手动全量备份',
+      createLimit: '同一时间只能有一个正在创建的手动备份'
+    },
+    backupStatus: {
+      status: {
+        COMPLETED: '正常', // 备份完成
+        BUILDING: '备份中', // 备份中
+        DELETING: '删除中', // 删除中
+        ERROR: '错误',
+        FAILED: '失败'
+      }
+    },
+    instanceClass: {
+      core: '{c}核{m} GB'
+    },
+    resetPassword: {
+      buttonText: '重置密码'
+    },
+    backupDeleteButton: {
+      buttonText: '删除',
+      dialogTitle: '删除备份',
+      deleting: '删除中',
+      deleteTip: '确认删除备份：{0}?',
+      middleTip: '当前备份状态下,暂不支持删除',
+      autoTip: '自动备份不允许删除'
+    },
+    // 根据备份创建实例按钮
+    createByBackupBtn: {
+      buttonText: '根据备份创建',
+      createTip: '当前备份状态下,暂不支持创建'
+    },
+    copyButton: {
+      success: '复制成功',
+      copy: '复制'
+    },
+    grayUserDialog: {
+      buttonText: '前往概览页',
+      item1: '您没有开通该产品的使用权限！',
+      item2: '如果您需要测试TiDB，请联系您的销售代表或者相关售前，开通TiDB的试用！！'
+    },
+    editTagButton: {
+      buttonText: '编辑标签'
+    },
+    selectedTagList: {
+      title: '已选标签',
+      clear: '清空'
+    },
+    modifyInstanceName: {
+      modifyName: '修改名称',
+      name: '名称',
+      tip: '只支持数字、大小写字母、英文下划线“_”，英文减号"-"，以及中文，不少于2字符且不超过64字符'
+    }
+  },
+  views: {
+    az: '可用区',
+    title: '分布式数据库 TiDB',
+    notFound: {
+      tip: '页面访问错误,请检查后重试...',
+      goIndex: '前往列表页'
+    },
+    // 页面级别
+    tidbList: {
+      tag: '标签',
+      tagFaild: '编辑标签失败,请稍候重试',
+      tagFilterFaild: '标签筛选失败,请稍候重试',
+      helpDoc: '分布式数据库 TiDB 帮助文档',
+      id: 'ID/名称',
+      name: '名称',
+      engineVersion: '版本',
+      status: '状态',
+      nodeSum: '节点总数',
+      createTime: '创建时间',
+      charge: '计费信息',
+      operation: '操作'
+    },
+    create: {
+      backupInfo: '备份信息',
+      backupTime: '备份时间',
+      backupName: '备份名称',
+      backupTip: `建议新创建的TiDB实例的总空间（TiKV存储空间 * TiKV节点数）大于等于原实例的总存储空间，否则可能由于空间不够导致恢复失败`,
+      backupChecked: '确认已知晓 TiDB 实例需要足够的空间以进行恢复',
+      createInstance: '创建实例',
+      createByBackup: '根据备份创建',
+      region: '地域',
+      flavor: '规格',
+      engineVersion: '版本',
+      template: '配置模板',
+      node: '节点',
+      network: '私有网络',
+      choiceNetwork: '选择网络',
+      selectAz: '选择可用区',
+      baseInfo: '基本信息',
+      instanceName: '实例名称',
+      rules: {
+        instanceName: `只支持数字、大小写字母、英文下划线“_”，英文减号"-"，以及中文，不少于2字符且不超过64字符`,
+        length: '名称需不少于{minimal}字符且不超过{maximum}字符',
+        require: '名称不能为空'
+      },
+      buyNum: '购买量',
+      duration: '购买时长',
+      buy: '立即购买',
+      notEnoughIpTip: '子网可用 IP 数不足，无法创建',
+      tidbNodeNumTip: '支持{min}-{max}个节点，生产环境建议2节点起',
+      tikvNodeNumTip: `支持{min}-{max}个节点，节点数跟数据规模相关，3节点起。TiKV为3副本，因此同样的数据量需要3倍的存储空间。当前可实际存储的数据量为{total} GB。`,
+      pdNodeNumTip: '生产环境建议3个节点起,支持{num}个节点',
+      monitorNodeNumTip: 'Monitor只需一个节点',
+      nodeSpec: '节点规格',
+      nodeNum: '节点数',
+      noSubnetTip: '请选择子网',
+      noNodeInfoTip: '请选择节点信息',
+      quota: `所选配置需配额{needQuota}核，当前配额{userQuota}核，剩余{availableQuota}核，可用配额不足，请提交工单提升配额！`,
+      quotaTip: '所选规格超过配额,无法创建,请提交工单提升配额!'
+    },
+    detail: {
+      tabNames: {
+        info: '实例信息',
+        monitor: '监控',
+        account: '帐号管理',
+        backup: '备份管理'
+      },
+      baseInfo: '基本信息',
+      configuration: '配置',
+      domainPort: '域名及端口',
+      network: '网络',
+      tag: '标签',
+      name: '名称',
+      charge: '计费类型',
+      chargeExpiredTime: '过期时间',
+      createTime: '创建时间',
+      region: '地域',
+      nodeSum: '节点总数',
+      engineVersion: '版本',
+      domainType: {
+        database: '数据库',
+        monitor: '监控'
+      },
+      internal: '内网',
+      extranet: '外网',
+      port: '端口',
+      monitor: '监控',
+      db: '数据库',
+      nodeNum: '节点数',
+      nodeSpec: '节点规格',
+      core: '{c}核 {m}GB',
+      storageSpace: '存储空间',
+      storageType: {
+        LOCAL_SSD: '本地 SSD'
+      },
+      operation: '操作',
+      status: '状态',
+      type: '类型',
+      accountJd_replicator: `1.jd_replicator为系统账号，请勿删除或者修改密码。`,
+      accountRoot: `2.root账号后续将收回，应用请勿使用root账号`,
+      superAccount: '高权限',
+      backup: '备份',
+      backupPolicy: '备份策略',
+      backupId: '备份 ID',
+      backupName: '备份名称',
+      backupStatus: '备份状态',
+      backupMode: '备份方式',
+      backupType: '备份类型',
+      backupSize: '备份大小',
+      backupCreateTime: '创建时间',
+      backupMethods: {
+        manual: '手动',
+        auto: '自动'
+      },
+      backupClass: {
+        full: '全量'
+      },
+      policy: {
+        backupPeriod: '自动备份周期',
+        startWindow: '自动备份开始时间',
+        retentionPeriod: '自动备份保留天数',
+        modifyPolicy: '修改策略',
+        tip: '一周至少有一次自动备份'
+      },
+      monitorTab: {
+        h: '{count}小时',
+        d: '{count}天',
+        setAlarm: '设置报警规则',
+        node: '节点',
+        instance: '实例',
+        pleaseholder: '请选择节点'
+      }
+    }
+  },
+  apiError: {
+    IAM: '您没有权限执行此操作，请联系管理员为您添加权限。',
+    // openApi通用错误
+    INVALID_ARGUMENT: '参数错误',
+    FAILED_PRECONDITION: '此操作需要的预置条件不满足',
+    OUT_OF_RANGE: '参数超出范围',
+    UNAUTHENTICATED: '验证失败',
+    HTTP_FORBIDDEN: '没有权限',
+    NOT_FOUND: '找不到对象',
+    ABORTED: '操作终止',
+    ALREADY_EXISTS: '对象已存在',
+    QUOTA_EXCEEDED: '配额不足',
+    RATE_LIMIT: '请求过频繁',
+    CANCELLED: '取消操作',
+    UNKNOWN: '未知错误',
+    INTERNAL: '内部错误',
+    NOT_IMPLEMENTED: '操作未实现',
+    SOURCE_UNAVAILABLE: '源站不可用',
+    UNAVAILABLE: '服务不可用',
+    DEFAULT: '系统错误'
+  }
+}
